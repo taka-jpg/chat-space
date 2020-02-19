@@ -30,9 +30,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|email|string|null: false|
-|password|string|null: false|
-|name|string|null: false|
+|name|string|null: false, unique: true, index: true|
+|email|string|null: false, unique: true|
 
 ### Association
 - has_many :messages
@@ -43,7 +42,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|groupname|text|null: false|
+|groupname|text|null: false, index: true|
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
