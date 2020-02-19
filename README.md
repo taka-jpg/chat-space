@@ -42,7 +42,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false, index: true|
+|name|string|null: false, index: true|
 
 ### Association
 - has_many :messages
