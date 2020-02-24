@@ -1,0 +1,58 @@
+.side-bar {
+  width: 300px;
+  height: 100vh;
+  float: left;
+  &__header {
+    background-color: #253141;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    &__top-items {
+      color: #ffffff;
+      height: 20px;
+      width: 260px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      &__name {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+      }
+      &__icons {
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .icon-edit {
+          color: #ffffff;
+          text-decoration: none;
+        }
+        .icon-cog {
+          color: #ffffff;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  &__group-list {
+    background-color: #2f3e51;
+    height: calc(100% - 100px);
+    &__side-items {
+      color: #ffffff;
+      font-weight: bold;
+      height: 91px;
+      width: calc(100% - 40px);
+      padding: 20px 20px 40px;
+      &__group {
+        font-size: 15px;
+        height: 15px;
+      }
+      &__message {
+        font-size: 11px;
+        height: 11px;
+        padding-top: 5px;
+      }
+    }
+  }
+}
