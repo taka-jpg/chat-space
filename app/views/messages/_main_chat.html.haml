@@ -1,0 +1,37 @@
+.main-chat
+  .main-chat__header
+    .main-chat__header__leftbox
+      .main-chat__header__leftbox__name
+        test
+      .main-chat__header__leftbox__member
+        Member：masa
+    .main-chat__header__edit
+      = link_to "#", class: "main-chat__header__edit__btn" do
+        Edit
+  .main-chat__message-list
+    .main-chat__message-list__comment-box
+      .main-chat__message-list__comment-box__name-box
+        .main-chat__message-list__comment-box__name-box__name
+          masa
+        .main-chat__message-list__comment-box__name-box__date
+          2109/11/20(Wed) 17:43:01
+      .main-chat__message-list__comment-box__comment
+        おはよう！
+        .main-chat__message-list__comment-box
+      .main-chat__message-list__comment-box__name-box
+        .main-chat__message-list__comment-box__name-box__name
+          masa
+        .main-chat__message-list__comment-box__name-box__date
+          2109/11/20(Wed) 17:43:34
+      .main-chat__message-list__comment-box__comment
+        今日は夜から雨
+  .main-chat__message-form
+    .main-chat__message-form__message-box
+      .main-chat__message-form__message-box__new-message
+        %input{type: "text", class:"text", placeholder: "type a message"}
+        .main-chat__message-form__message-box__new-message__input-image
+          %label{class: "image"}
+            = icon('far', 'image')
+            %input{type:"file", class: "image__file"}
+      .main-chat__message-form__message-box__submit-btn
+        Send
