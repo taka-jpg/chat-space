@@ -9,22 +9,7 @@
       = link_to "#", class: "main-chat__header__edit__btn" do
         Edit
   .main-chat__message-list
-    .main-chat__message-list__comment-box
-      .main-chat__message-list__comment-box__name-box
-        .main-chat__message-list__comment-box__name-box__name
-          masa
-        .main-chat__message-list__comment-box__name-box__date
-          2109/11/20(Wed) 17:43:01
-      .main-chat__message-list__comment-box__comment
-        おはよう！
-        .main-chat__message-list__comment-box
-      .main-chat__message-list__comment-box__name-box
-        .main-chat__message-list__comment-box__name-box__name
-          masa
-        .main-chat__message-list__comment-box__name-box__date
-          2109/11/20(Wed) 17:43:34
-      .main-chat__message-list__comment-box__comment
-        今日は夜から雨
+    = render @messages
   .main-chat__message-form
     = form_for [@group, @message] do |f|
       .main-chat__message-form__message-box
