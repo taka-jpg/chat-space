@@ -39,19 +39,22 @@
     background-color: #2f3e51;
     height: calc(100% - 100px);
     &__side-items {
-      color: #ffffff;
-      font-weight: bold;
       height: 91px;
       width: calc(100% - 40px);
       padding: 20px 20px 40px;
-      &__group {
-        font-size: 15px;
-        height: 15px;
-      }
-      &__message {
-        font-size: 11px;
-        height: 11px;
-        padding-top: 5px;
+      .groups {
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+        &__group {
+          font-size: 15px;
+          height: 15px;
+        }
+        &__message {
+          font-size: 11px;
+          height: 11px;
+          padding-top: 5px;
+        }
       }
     }
   }

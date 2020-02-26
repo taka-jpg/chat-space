@@ -34,6 +34,7 @@
       &__btn {
         text-decoration: none;
         color: #38aef0;
+        display: block;
       }
     }
   }
@@ -82,7 +83,7 @@
           border-style: none;
         }
         &__input-image {
-          padding-right: 10px;
+          height: 30px;
           position: absolute;
           top: 0;
           right: 10px;
