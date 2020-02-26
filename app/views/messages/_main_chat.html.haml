@@ -27,12 +27,11 @@
         今日は夜から雨
   .main-chat__message-form
     = form_for [@group, @message] do |f|
-    .main-chat__message-form__message-box
-      .main-chat__message-form__message-box__new-message
-        %input{type: "text", class:"text", placeholder: "type a message"}
-        .main-chat__message-form__message-box__new-message__input-image
-          %label{class: "image"}
-            = icon('far', 'image')
-            %input{type:"file", class: "image__file"}
-      .main-chat__message-form__message-box__submit-btn
-        Send
+      .main-chat__message-form__message-box
+        .main-chat__message-form__message-box__new-message
+          = f.text_field :content, class: "text", placeholder: "type a message"
+          .main-chat__message-form__message-box__new-message__input-image
+            = f.label :image, class: "image" do
+              = icon('fas', 'image', class: "icon")
+              = f.file_field :image, class: "image__file"
+        = f.submit "Send", class: "main-chat__message-form__message-box__submit-btn"
