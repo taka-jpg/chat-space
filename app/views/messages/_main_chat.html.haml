@@ -2,11 +2,13 @@
   .main-chat__header
     .main-chat__header__leftbox
       .main-chat__header__leftbox__name
-        test
+        = @group.name
       .main-chat__header__leftbox__member
-        Member：masa
+        Member：
+        - @group.users.each do |user|
+          = user.name
     .main-chat__header__edit
-      = link_to "#", class: "main-chat__header__edit__btn" do
+      = link_to edit_group_path(@group), class: "main-chat__header__edit__btn" do
         Edit
   .main-chat__message-list
     = render @messages
