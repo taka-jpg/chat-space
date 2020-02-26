@@ -26,6 +26,7 @@
       .main-chat__message-list__comment-box__comment
         今日は夜から雨
   .main-chat__message-form
+    = form_for [@group, @message] do |f|
     .main-chat__message-form__message-box
       .main-chat__message-form__message-box__new-message
         %input{type: "text", class:"text", placeholder: "type a message"}
