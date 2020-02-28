@@ -41,6 +41,7 @@
   &__message-list {
     background-color: #fafafa;
     height: calc(100% - 190px);
+    overflow: scroll;
     &__comment-box {
       padding: 35px 0 11px 40px;
       &__name-box {
@@ -58,8 +59,10 @@
         }
       }
       &__comment {
-        color: #434A54;
+        &__text{
+          color: #434A54;
         font-size: 14px;
+        }
       }
     }
   }
