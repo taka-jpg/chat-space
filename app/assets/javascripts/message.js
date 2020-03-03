@@ -1,44 +1,4 @@
 $(function(){
-  function buildHTML(message){
-    if ( message.image ) {
-      var html =
-       `<div class="main-chat__message-list__comment-box">
-          <div class="main-chat__message-list__comment-box__name-box">
-            <div class="main-chat__message-list__comment-box__name-box__name">
-              ${message.user_name}
-            </div>
-            <div class="main-chat__message-list__comment-box__name-box__date">
-              ${message.created_at}
-            </div>
-          </div>
-          <div class="main-chat__message-list__comment-box__comment">
-            <div class="main-chat__message-list__comment-box__comment__text">
-              ${message.content}
-            </div>
-          </div>
-          <img src=${message.image} >
-        </div>`
-      return html;
-    } else {
-      var html =
-       `<div class="main-chat__message-list__comment-box">
-          <div class="main-chat__message-list__comment-box__name-box">
-            <div class="main-chat__message-list__comment-box__name-box__name">
-              ${message.user_name}
-            </div>
-            <div class="main-chat__message-list__comment-box__name-box__date">
-              ${message.created_at}
-            </div>
-          </div>
-          <div class="main-chat__message-list__comment-box__comment">
-            <div class="main-chat__message-list__comment-box__comment__text">
-              ${message.content}
-            </div>
-          </div>
-        </div>`
-      return html;
-    };
-  }
 
   $('#new_message').on('submit', function(e){
     e.preventDefault()
@@ -102,7 +62,7 @@ $(function(){
           <div class="main-chat__message-list__comment-box__comment__text">
             ${message.content}
           </div>
-          <img src="${message.image}>
+          <img src="${message.image}">
         </div>
       </div>`
     } else if (message.content) {
