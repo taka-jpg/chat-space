@@ -32,4 +32,3 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
 end
-以下の5点は書き換えが必須です。
